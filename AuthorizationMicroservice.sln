@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32505.173
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorizationMicroservice", "AuthorizationMicroservice.csproj", "{82E8287E-7362-4E15-8A8C-4A16648971BF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AuthorizationMSTesting", "..\AuthorizationMSTesting\AuthorizationMSTesting.csproj", "{01E8CBAC-52B6-40E3-8157-23094306F54D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CalculateNetWorthApi", "..\CalculateNetWorthMicroservice\CalculateNetWorthApi.csproj", "{1BE31937-3136-47A0-B9DD-F5BBE04A4BF8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DailySharePrice", "..\Daily_share_price\Daily_share_price\DailySharePrice.csproj", "{A4D85DF0-52E0-4ED3-A75D-228874DC6613}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DailyMutualFundNAV", "..\DailyMutualFundNAV\DailyMutualFundNAV\DailyMutualFundNAV\DailyMutualFundNAV.csproj", "{AAC6FF88-0EA7-44C9-8276-5A53BDB65E62}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{82E8287E-7362-4E15-8A8C-4A16648971BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{82E8287E-7362-4E15-8A8C-4A16648971BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{82E8287E-7362-4E15-8A8C-4A16648971BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{82E8287E-7362-4E15-8A8C-4A16648971BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{01E8CBAC-52B6-40E3-8157-23094306F54D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{01E8CBAC-52B6-40E3-8157-23094306F54D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{01E8CBAC-52B6-40E3-8157-23094306F54D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{01E8CBAC-52B6-40E3-8157-23094306F54D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BE31937-3136-47A0-B9DD-F5BBE04A4BF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BE31937-3136-47A0-B9DD-F5BBE04A4BF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BE31937-3136-47A0-B9DD-F5BBE04A4BF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BE31937-3136-47A0-B9DD-F5BBE04A4BF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A4D85DF0-52E0-4ED3-A75D-228874DC6613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A4D85DF0-52E0-4ED3-A75D-228874DC6613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A4D85DF0-52E0-4ED3-A75D-228874DC6613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A4D85DF0-52E0-4ED3-A75D-228874DC6613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AAC6FF88-0EA7-44C9-8276-5A53BDB65E62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AAC6FF88-0EA7-44C9-8276-5A53BDB65E62}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AAC6FF88-0EA7-44C9-8276-5A53BDB65E62}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AAC6FF88-0EA7-44C9-8276-5A53BDB65E62}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F3EF7B42-F2AF-4DB6-B037-274246797F83}
+	EndGlobalSection
+EndGlobal
