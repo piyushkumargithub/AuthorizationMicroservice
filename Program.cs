@@ -1,5 +1,8 @@
+using AuthorizationMicroservice.Database;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
@@ -13,7 +16,17 @@ namespace AuthorizationMicroservice
     {
         public static void Main(string[] args)
         {
-            CreateHostBuilder(args).Build().Run();
+            var host = CreateHostBuilder(args).Build();
+
+            var service = (IServiceScopeFactory)host.Services.GetService(typeof(IServiceScopeFactory));
+
+            using (var db = service.CreateScope().ServiceProvider.GetService<DatabaseContext>())
+            {
+                db.Database.Migrate();
+            }
+
+            host.Run();
+
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

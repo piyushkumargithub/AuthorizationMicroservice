@@ -25,6 +25,12 @@ namespace AuthorizationMicroservice.Repository
         {
             try
             {
+                if (_context.UserCredentials.Count()==0)
+                {
+                    UserCredential adminuser=new UserCredential() { Username="admin",Password="admin"};
+                    _context.UserCredentials.Add(adminuser);
+                    _context.SaveChanges();
+                }
                 
                 if (!_context.UserCredentials.Any(u => u.Username == user.Username && u.Password == user.Password))
                 {
